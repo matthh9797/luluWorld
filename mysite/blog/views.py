@@ -1,5 +1,6 @@
 from django.views import generic
 from .models import Post
+from django.shortcuts import render
 
 
 # Create your views here.
@@ -11,4 +12,3 @@ class PostList(generic.ListView):
 class PostDetail(generic.DetailView):
     model = Post
     template_name = 'post_detail.html'
-
